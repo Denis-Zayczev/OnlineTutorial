@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <section>
+    <div class="side" id="side1">
+      <video src="bg.mp4" type="video/mp4" autoplay loop muted></video>
+    </div>
+    <div class="side" id="side2">
+      <video src="bg.mp4" type="video/mp4" autoplay loop muted></video>
+    </div>
+  </section>
+  <div class="content">
+    <h2>Split vidio on Page scroll</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae magni ab, repudiandae quo id praesentium accusantium optio delectus iusto molestias ratione a expedita, recusandae unde fugit aliquid, quia provident illo quae atque iure libero nesciunt nobis! Atque id neque totam corporis aspernatur, nihil vitae minima. Natus, doloremque harum et, rerum asperiores sequi voluptas illum qui autem animi exercitationem deleniti perferendis, a earum veniam similique ex amet fugiat magni sint nesciunt velit adipisci dolor ipsam. Ex pariatur, nostrum sapiente porro unde, repellat eligendi ipsum voluptate nisi placeat obcaecati! Deleniti cum sit voluptatibus omnis porro. Asperiores unde tempore autem doloribus dignissimos minus cum quis laboriosam eos. Consequuntur deserunt molestiae temporibus vitae harum rerum similique alias ipsa voluptatum id velit vero accusamus, eaque laboriosam, debitis rem! Similique ipsam, quod iure hic quidem voluptatum obcaecati nobis blanditiis? Numquam placeat veniam repudiandae? Porro sed atque praesentium, provident, quae expedita nulla reprehenderit vitae corrupti illum et.</p>
+  </div>
+
+  <script>
+    let side1 = document.getElementById('side1');
+    let side2 = document.getElementById('side2');
+
+    window.addEventListener('scroll', function(){
+      side1.style.left = -window.pageYOffset +'px';
+      side2.style.left = window.pageYOffset +'px';
+    })
+  </script>
+</body>
+
+</html>

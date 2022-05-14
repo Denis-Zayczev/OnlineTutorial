@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="content">
+      <h2>Heading...</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium reprehenderit nulla culpa repellendus neque exercitationem earum fugit libero hic minima ad explicabo, cumque inventore? Fugit reprehenderit minima eius quas rerum!</p>
+    </div>
+    <div class="toggleBtn"></div>
+  </div>
+</body>
+
+<script>
+  let toggleBtn = document.querySelector('.toggleBtn');
+  let container = document.querySelector('.container');
+  toggleBtn.onclick = function() {
+    container.classList.toggle('active');
+  }
+</script>
+
+</html>

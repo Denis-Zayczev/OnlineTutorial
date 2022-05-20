@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <section>
+    <h2>Requested Video</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita laudantium sint officia eum quaerat explicabo nostrum quia veritatis voluptate aperiam perferendis, eveniet, aliquam quae amet architecto optio iste vero provident porro commodi rem
+      in aliquid. Ab quos, consequatur qui beatae alias magnam vero, ducimus id harum eligendi voluptatibus, consectetur et amet necessitatibus nobis odit. Exercitationem, labore nesciunt? Magni laboriosam ipsam explicabo, accusamus similique non perferendis
+      voluptatem est, molestiae quaerat quia dolorum iste quam doloribus ex aliquam quas asperiores deserunt voluptate alias neque animi! A ipsam repudiandae expedita voluptates obcaecati vel, architecto praesentium corporis voluptate similique libero
+      error voluptatem, molestiae reiciendis quaerat suscipit ipsum veritatis excepturi! Ducimus consectetur iure exercitationem quidem officiis minima voluptate voluptatibus dolorum nemo, impedit, eius cupiditate incidunt corporis ex inventore alias
+      illum! Magni, libero! Quis, atque minus! Ea cumque, praesentium quidem deleniti maxime consectetur explicabo accusamus quod sint nesciunt, temporibus provident eligendi consequuntur neque magni quisquam veniam? Doloribus ab nemo totam? Praesentium
+      atque optio placeat nesciunt sapiente natus non, beatae consequatur odit numquam recusandae facilis officia animi, aspernatur, dolorem minima explicabo quasi necessitatibus unde qui! Sequi sint quaerat molestias nostrum id laboriosam hic, a dolor
+      sed excepturi veritatis aut quidem at eius consequuntur! Doloribus quo ratione nisi.</p>
+    <button href="#" class="btn">Click Here</button>
+
+    <div class="popup">
+      <h2>Your content goes here...</h2>
+      <b class="close">x</b>
+    </div>
+  </section>
+
+  <canvas id="my-canvas"></canvas>
+  <script src="index.min.js"></script>
+
+  <script>
+    let btn = document.querySelector('.btn');
+    let popup = document.querySelector('.popup');
+    let close = document.querySelector('.close');
+    let confe = document.querySelector('#my-canvas');
+
+    btn.onclick = function() {
+      popup.classList.add('active');
+      confe.classList.add('active');
+    }
+    close.onclick = function() {
+      popup.classList.remove('active');
+      confe.classList.remove('active');
+    }
+
+
+    var confettiSettings = {
+      target: 'my-canvas'
+    };
+    var confetti = new ConfettiGenerator(confettiSettings);
+    confetti.render();
+  </script>
+
+</body>
+
+</html>
